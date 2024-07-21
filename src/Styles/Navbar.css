@@ -1,0 +1,14 @@
+.NavbarContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.navLinks{
+  font-family: "SpaceGrotesk-Medium";
+}
+.logo, .cartIcon{
+  padding-top: 0.4em;
+}
+.navText{
+  font-size: 1em;
+  font-family: "Satoshi-Medium";
+}
