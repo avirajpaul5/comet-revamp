@@ -12,8 +12,7 @@ const Navbar = () => {
         <p>Good Shoes will take you to Great Places | </p>
       </div>
       <ul className="nav-links">
-        <li><a className='Men'>Men</a></li>
-        <li><a className='Women'>Women</a></li>
+        <li><a className='Products'>Products</a></li>
         <li><a className='Drops'>Drops</a></li>
         <li><a className='About-us'>About-Us</a></li>
       </ul>
