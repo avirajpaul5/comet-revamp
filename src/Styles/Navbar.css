@@ -2,13 +2,32 @@
   display: flex;
   justify-content: space-between;
 }
-.navLinks{
-  font-family: "SpaceGrotesk-Medium";
-}
-.logo, .cartIcon{
+
+.logo{
   padding-top: 0.4em;
+  width: 8vh;
 }
+
+.cartIcon{
+  padding-top: 0.4em;
+  width: 5.5vh;
+}
+
 .navText{
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: "Satoshi-Medium";
+  color: #555;
+}
+
+ul {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #666;
+  position: relative;
+  font-family: "SpaceGrotesk-Medium";
+  font-size: 0.8em;
 }

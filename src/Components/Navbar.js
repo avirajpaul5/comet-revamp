@@ -11,14 +11,14 @@ const Navbar = () => {
       <div className="navText">
         <p>Good Shoes will take you to Great Places | </p>
       </div>
-      <div className="navLinks">
-        <p>Men</p>
-        <p>Women</p>
-        <p>Drops</p>
-        <p>About Us</p>
-      </div>
+      <ul className="nav-links">
+        <li><a className='Men'>Men</a></li>
+        <li><a className='Women'>Women</a></li>
+        <li><a className='Drops'>Drops</a></li>
+        <li><a className='About-us'>About-Us</a></li>
+      </ul>
       <div className="cartIcon">
-        <img src={cartIcon} alt="CART" className="logo" />
+        <img src={cartIcon} alt="CART" className="cartIcon" />
       </div>
     </div>
   );
