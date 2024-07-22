@@ -1,0 +1,129 @@
+:root {
+    --line-contrast: 500%;
+    --photo-brightness: 90%;
+    --photo-contrast: 150%;
+    --photo-blur: 3px;
+    --blend-mode: mix-blend-mode;
+    --point-size: 1px;
+    --point-color: #333;
+    --point-spacing: 8px;
+}
+
+.reviewSection {
+    height: 100vh;
+    margin-top: 10vh;
+}
+
+.container {
+    padding: 3rem 0;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.0);
+}
+
+.maal {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    mix-blend-mode: var(--blend-mode);
+    overflow: hidden;
+    transition: flex 0.4s cubic-bezier(.32, .79, .38, .99), filter 0.5s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+
+    &:hover {
+        flex: 7;
+        filter: grayscale(0) saturate(1.3) blur(0px);
+    }
+
+    &:hover .caption {
+        opacity: 1;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-size: var(--point-spacing) var(--point-spacing);
+        filter: contrast(--line-contrast);
+        transition: opacity .2s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        opacity: .3;
+        pointer-events: none;
+    }
+
+    &:hover:before {
+        opacity: 0;
+    }
+}
+
+
+.caption {
+    position: fixed;
+    left: .5rem;
+    right: .5rem;
+    bottom: 0;
+    margin: 1rem;
+    padding: 1rem;
+    color: #eee;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4.0px);
+    transition: opacity 0.2s ease, backdrop-filter 1s cubic-bezier(0.860, 0.000, 0.070, 1.000);
+    opacity: 0;
+
+    &:hover {
+        backdrop-filter: blur(0.0px);
+    }
+
+    & p {
+        width: 100%;
+    }
+
+    & h1 {
+        color: #fff;
+        mix-blend-mode: difference;
+    }
+}
+
+.maal-1 {
+    border-radius: 1rem 0rem 0rem 1rem;
+    background-image: url('https://www.wearcomet.com/cdn/shop/files/image1_1000x.jpg?v=1687361568');
+}
+
+.maal-2 {
+    background-image: url('https://www.wearcomet.com/cdn/shop/files/customer_review_1000x.jpg?v=1691134725');
+}
+
+.maal-3 {
+    background-image: url('https://www.wearcomet.com/cdn/shop/files/Homepage_Review_1000x.jpg?v=1710146415');
+}
+
+.maal-4 {
+    background-image: url('https://www.wearcomet.com/cdn/shop/files/IMG_9808-min_1000x.jpg?v=1718368692');
+}
+
+.maal-5 {
+    background-image: url('https://www.wearcomet.com/cdn/shop/files/WhatsApp_Image_2024-03-12_at_15.56.05_1000x.jpg?v=1710483412');
+}
+
+.maal-6 {
+    background-image: url('https://www.wearcomet.com/cdn/shop/files/IMG_9869-min_1000x.jpg?v=1718367725');
+}
+
+.maal-7 {
+    border-radius: 0rem 1rem 1rem 0rem;
+    background-image: url('https://www.wearcomet.com/cdn/shop/files/WhatsApp_Image_2023-08-02_at_6.05.42_PM_1000x.jpg?v=1692856900');
+}
