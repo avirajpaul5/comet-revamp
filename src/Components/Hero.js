@@ -1,51 +1,62 @@
 import React, { useState } from "react";
 import { gsap } from "gsap";
 import "../Styles/Hero.css";
-import heroImg from "../Assets/HeroImages/comet.png";
+import shoe1 from "../Assets/HeroImages/starbound1.png";
+import shoe2 from "../Assets/HeroImages/Crater.png";
+import shoe3 from "../Assets/HeroImages/Jugnu.png";
+import shoe4 from "../Assets/HeroImages/Ludo.png";
+import shoe5 from "../Assets/HeroImages/Mango.png";
+import shoe6 from "../Assets/HeroImages/Skribble.png";
+import shoe7 from "../Assets/HeroImages/Spacebound.png";
+import shoe8 from "../Assets/HeroImages/Tuxedo.png";
+import shoe9 from "../Assets/HeroImages/dusk.png";
+import shoe10 from "../Assets/HeroImages/luna.png";
+import shoe11 from "../Assets/HeroImages/santanu.png";
+
 const images = [
   {
     id: 1,
-    src: "https://www.wearcomet.com/cdn/shop/files/sb_1-min_1100x.jpg?v=1716807770",
+    src: shoe1,
   },
   {
     id: 2,
-    src: "https://www.wearcomet.com/cdn/shop/files/Crater_Desktop-min_f3646250-bf78-4bd7-beb3-0f06de37e2c7_2000x.jpg?v=1716301668",
+    src: shoe2,
   },
   {
     id: 3,
-    src: "https://www.wearcomet.com/cdn/shop/files/sb_1-min_1100x.jpg?v=1716807770",
+    src: shoe3,
   },
   {
     id: 4,
-    src: "https://www.wearcomet.com/cdn/shop/files/Mango_Desktop-min_14a104a2-b9f4-4ae9-8f79-da7e79a0c277_2000x.jpg?v=1716301750",
+    src: shoe4,
   },
   {
     id: 5,
-    src: "https://www.wearcomet.com/cdn/shop/files/Crater_Desktop-min_f3646250-bf78-4bd7-beb3-0f06de37e2c7_2000x.jpg?v=1716301668",
+    src: shoe5,
   },
   {
     id: 6,
-    src: "https://www.wearcomet.com/cdn/shop/files/sb_1-min_1100x.jpg?v=1716807770",
+    src: shoe6,
   },
   {
     id: 7,
-    src: "https://www.wearcomet.com/cdn/shop/files/sb4-min_1100x.jpg?v=1716807769",
+    src: shoe7,
   },
   {
     id: 8,
-    src: "https://www.wearcomet.com/cdn/shop/files/Crater_Desktop-min_f3646250-bf78-4bd7-beb3-0f06de37e2c7_2000x.jpg?v=1716301668",
+    src: shoe8,
   },
   {
     id: 9,
-    src: "https://www.wearcomet.com/cdn/shop/files/Mango_Desktop-min_14a104a2-b9f4-4ae9-8f79-da7e79a0c277_2000x.jpg?v=1716301750",
+    src: shoe9,
   },
   {
     id: 10,
-    src: "https://www.wearcomet.com/cdn/shop/files/Crater_Desktop-min_f3646250-bf78-4bd7-beb3-0f06de37e2c7_2000x.jpg?v=1716301668",
+    src: shoe10,
   },
   {
     id: 11,
-    src: "https://www.wearcomet.com/cdn/shop/files/Mango_Desktop-min_14a104a2-b9f4-4ae9-8f79-da7e79a0c277_2000x.jpg?v=1716301750",
+    src: shoe11,
   },
 ];
 const shuffleArray = (array) => {

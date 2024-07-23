@@ -1,16 +1,23 @@
 import React from "react";
 import "../Styles/Vault.css";
+import shoe1 from "../Assets/vaultImages/Crater.png";
+import shoe2 from "../Assets/vaultImages/Jugnu.png";
+import shoe3 from "../Assets/vaultImages/Ludo.png";
+import shoe4 from "../Assets/vaultImages/Mango.png";
+import shoe5 from "../Assets/vaultImages/Skribble.png";
+import shoe6 from "../Assets/vaultImages/Spacebound.png";
+import shoe7 from "../Assets/vaultImages/Tuxedo.png";
+import shoe8 from "../Assets/vaultImages/santanu.png";
+
 const images = [
-  "https://www.wearcomet.com/cdn/shop/files/sb_1-min_1100x.jpg?v=1716807770",
-  "https://www.wearcomet.com/cdn/shop/files/Crater_Desktop-min_f3646250-bf78-4bd7-beb3-0f06de37e2c7_2000x.jpg?v=1716301668",
-  "https://www.wearcomet.com/cdn/shop/files/sb_1-min_1100x.jpg?v=1716807770",
-  "https://www.wearcomet.com/cdn/shop/files/Mango_Desktop-min_14a104a2-b9f4-4ae9-8f79-da7e79a0c277_2000x.jpg?v=1716301750",
-  "https://www.wearcomet.com/cdn/shop/files/Crater_Desktop-min_f3646250-bf78-4bd7-beb3-0f06de37e2c7_2000x.jpg?v=1716301668",
-  "https://www.wearcomet.com/cdn/shop/files/sb_1-min_1100x.jpg?v=1716807770",
-  "https://www.wearcomet.com/cdn/shop/files/sb4-min_1100x.jpg?v=1716807769",
-  "https://www.wearcomet.com/cdn/shop/files/Crater_Desktop-min_f3646250-bf78-4bd7-beb3-0f06de37e2c7_2000x.jpg?v=1716301668",
-  "https://www.wearcomet.com/cdn/shop/files/sb_1-min_1100x.jpg?v=1716807770",
-  "https://www.wearcomet.com/cdn/shop/files/Mango_Desktop-min_14a104a2-b9f4-4ae9-8f79-da7e79a0c277_2000x.jpg?v=1716301750",
+  shoe1,
+  shoe2,
+  shoe3,
+  shoe4,
+  shoe5,
+  shoe6,
+  shoe7,
+  shoe8,
 ];
 const Vault = () => {
   return (
