@@ -6,7 +6,7 @@ const Reviews = () => {
     <>
       <div className='reviewSection'>
         <h1>What're they Saying?</h1>
-        <div className="container">
+        <div className="ReviewsContainer">
         <div className="gallery-wrap">
           <div className="maal maal-1">
             <div className="caption">

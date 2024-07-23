@@ -48,7 +48,7 @@ const App = () => {
             <Vault />
           </div>
 
-          <Reviews />
+          {/* <Reviews /> */}
           <Footer />
         </div>
       </ReactLenis>
