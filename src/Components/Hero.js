@@ -86,8 +86,10 @@ const Hero = () => {
     <div className="HeroContainer">
       <div className="heroTop">
         <div className="heroHeading">COMeT</div>
-        <p className="heroText"> on a mission</p>
-        <div className="heroLine" />
+        <p className="heroText" > Shop for <span> Men <p className="womenShop">Women</p> </span></p>
+        <div className="heroLine">
+          <p>“Sneakers <span> on a mission” </span></p>
+        </div>
       </div>
 
       <div className="grid-container">

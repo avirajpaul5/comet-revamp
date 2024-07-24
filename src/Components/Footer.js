@@ -1,6 +1,7 @@
 import React from 'react'
 import "../Styles/Footer.css"
 import Comet from "../Assets/footerImages/COMeT.png"
+import CardDisplay from "./CardDisplay"
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="upperFooter">
           <h3> Good Shoes will take you to Great places |</h3>
-          <div className='deliveryoptions'>
+          {/* <div className='deliveryoptions'>
             <div className="optionone">
               <h1>Free Delivery</h1>
               <p>Free shipping for all orders.</p>
@@ -21,7 +22,8 @@ const Footer = () => {
               <h1>Free Delivery</h1>
               <p>Free shipping for all orders.</p>
             </div>
-          </div>
+          </div> */}
+          <CardDisplay />
         </div>
         <div className="lowerFooter">
           <div className='upperbar'>
@@ -47,7 +49,7 @@ const Footer = () => {
             </div>
           </div>
           <div className='lowerbar'>
-            <img src={Comet} alt="comet"></img>
+            <img src={Comet} alt="comet" draggable="false"></img>
             {/* <h1 className='cometsig'>COM<span className='onlye'>e</span>T</h1> */}
             <div className='credits'>
               <p>© 2024, Grails Marketing Private Limited. All Rights Reserved.</p>
