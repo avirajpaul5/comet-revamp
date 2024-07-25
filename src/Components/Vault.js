@@ -8,22 +8,16 @@ import shoe5 from "../Assets/vaultImages/Skribble.png";
 import shoe6 from "../Assets/vaultImages/Spacebound.png";
 import shoe7 from "../Assets/vaultImages/Tuxedo.png";
 import shoe8 from "../Assets/vaultImages/santanu.png";
+import Scramble from "./Scramble";
 
-const images = [
-  shoe1,
-  shoe2,
-  shoe3,
-  shoe4,
-  shoe5,
-  shoe6,
-  shoe7,
-  shoe8,
-];
+const images = [shoe1, shoe2, shoe3, shoe4, shoe5, shoe6, shoe7, shoe8];
 const Vault = () => {
   return (
     <div className="VaultContainer">
       <div className="VaultTopContainer">
-        <p style={{}}>| THE VAULT</p>
+        <Scramble textLength={15}>
+          <p style={{}}>| THE VAULT</p>
+        </Scramble>
         <p style={{}}>
           LIMITED QUANTITIES, ONCE A MONTH. NO RESTOCK ONCE SOLD OUT.
         </p>

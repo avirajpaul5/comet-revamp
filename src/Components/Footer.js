@@ -1,8 +1,8 @@
-import React from 'react'
-import "../Styles/Footer.css"
-import Comet from "../Assets/footerImages/COMeT.png"
-import CardDisplay from "./CardDisplay"
-
+import React from "react";
+import "../Styles/Footer.css";
+import Comet from "../Assets/footerImages/COMeT.png";
+import CardDisplay from "./CardDisplay";
+import Scramble from "./Scramble";
 const Footer = () => {
   return (
     <>
@@ -26,39 +26,43 @@ const Footer = () => {
           <CardDisplay />
         </div>
         <div className="lowerFooter">
-          <div className='upperbar'>
-            <div className='socialslinks'>
+          <div className="upperbar">
+            <div className="socialslinks">
               <h2>Our Socials</h2>
-              <p className='footerminilink'>// Instagram</p>
-              <p className='footerminilink'>// Linked In</p>
+              <p className="footerminilink">// Instagram</p>
+              <p className="footerminilink">// Linked In</p>
             </div>
-            <div className='Aboutus'>
+            <div className="Aboutus">
               <h2>About-Us</h2>
-              <p className='footerminilink'>// About Us</p>
-              <p className='footerminilink'>// Garage</p>
-              <p className='footerminilink'>// Vault</p>
-              <p className='footerminilink'>// Craftsmanship</p>
+
+              <p className="footerminilink">// About Us</p>
+              <p className="footerminilink">// Garage</p>
+              <p className="footerminilink">// Vault</p>
+              <p className="footerminilink">// Craftsmanship</p>
             </div>
-            <div className='quickLinks'>
+            <div className="quickLinks">
               <h2>Quick Links</h2>
-              <p className='footerminilink'>// Home</p>
-              <p className='footerminilink'>// Best Sellers</p>
-              <p className='footerminilink'>// Shoes</p>
-              <p className='footerminilink'>// Reviews</p>
-              <p className='footerminilink'>//  Contact</p>
+
+              <p className="footerminilink">// Home</p>
+              <p className="footerminilink">// Best Sellers</p>
+              <p className="footerminilink">// Shoes</p>
+              <p className="footerminilink">// Reviews</p>
+              <p className="footerminilink">// Contact</p>
             </div>
           </div>
-          <div className='lowerbar'>
+          <div className="lowerbar">
             <img src={Comet} alt="comet" draggable="false"></img>
             {/* <h1 className='cometsig'>COM<span className='onlye'>e</span>T</h1> */}
-            <div className='credits'>
-              <p>© 2024, Grails Marketing Private Limited. All Rights Reserved.</p>
+            <div className="credits">
+              <p>
+                © 2024, Grails Marketing Private Limited. All Rights Reserved.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

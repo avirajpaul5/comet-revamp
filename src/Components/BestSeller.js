@@ -2,16 +2,16 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
 import "../Styles/BestSeller.css";
-import shoe1 from "../Assets/HeroImages/Crater.png";
-import shoe2 from "../Assets/HeroImages/Jugnu.png";
-import shoe3 from "../Assets/HeroImages/Ludo.png";
-import shoe4 from "../Assets/HeroImages/Mango.png";
-import shoe5 from "../Assets/HeroImages/Skribble.png";
-import shoe6 from "../Assets/HeroImages/Spacebound.png";
-import shoe7 from "../Assets/HeroImages/Tuxedo.png";
-import shoe8 from "../Assets/HeroImages/dusk.png";
-import shoe9 from "../Assets/HeroImages/luna.png";
-import shoe10 from "../Assets/HeroImages/santanu.png";
+import shoe1 from "../Assets/ProductImages/ProductImage1.png";
+import shoe2 from "../Assets/ProductImages/ProductImage2.png";
+import shoe3 from "../Assets/ProductImages/ProductImage3.png";
+import shoe4 from "../Assets/ProductImages/ProductImage4.png";
+import shoe5 from "../Assets/ProductImages/ProductImage5.png";
+import shoe6 from "../Assets/ProductImages/ProductImage6.png";
+import shoe7 from "../Assets/ProductImages/ProductImage7.png";
+import shoe8 from "../Assets/ProductImages/ProductImage8.png";
+import shoe9 from "../Assets/ProductImages/ProductImage9.png";
+import shoe10 from "../Assets/ProductImages/ProductImage10.png";
 
 gsap.registerPlugin(Draggable);
 
@@ -23,8 +23,8 @@ const Bestseller = () => {
       shoe2,
       shoe3,
       shoe4,
-      shoe5,
-      shoe6,
+        shoe5,
+        shoe6,
       shoe7,
       shoe8,
       shoe9,

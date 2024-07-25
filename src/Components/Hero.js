@@ -12,6 +12,7 @@ import shoe8 from "../Assets/HeroImages/Tuxedo.png";
 import shoe9 from "../Assets/HeroImages/dusk.png";
 import shoe10 from "../Assets/HeroImages/luna.png";
 import shoe11 from "../Assets/HeroImages/santanu.png";
+import Scramble from "./Scramble";
 
 const images = [
   {
@@ -86,9 +87,20 @@ const Hero = () => {
     <div className="HeroContainer">
       <div className="heroTop">
         <div className="heroHeading">COMeT</div>
-        <p className="heroText" > Shop for <span> Men <p className="womenShop">Women</p> </span></p>
+
+        <p className="heroText">
+          {" "}
+          Shop for{" "}
+          <span>
+            {" "}
+            Men <p className="womenShop">Women</p>{" "}
+          </span>
+        </p>
+
         <div className="heroLine">
-          <p>“Sneakers <span> on a mission” </span></p>
+          <p>
+            “Sneakers <span> on a mission” </span>
+          </p>
         </div>
       </div>
 

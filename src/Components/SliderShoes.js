@@ -11,6 +11,7 @@ import slider1hover from "../Assets/sliderImages/slider1hover.png";
 import slider2hover from "../Assets/sliderImages/slider2hover.png";
 import slider3hover from "../Assets/sliderImages/slider3hover.png";
 import slider4hover from "../Assets/sliderImages/slider4hover.png";
+import Scramble from "./Scramble";
 
 const SliderShoesSection = () => {
   useGSAP(() => {
@@ -57,24 +58,40 @@ const SliderShoesSection = () => {
       <div id="parallax-bg-3" className="cardsContainer">
         <div id="bg-3-1" className="sliderCards">
           <img src={slider1} className="defaultImg" alt="Slider 1"></img>
-          <img src={slider1hover} className="imgOnHover" alt="Slider 1 Hover"></img>
+          <img
+            src={slider1hover}
+            className="imgOnHover"
+            alt="Slider 1 Hover"
+          ></img>
         </div>
         <div id="bg-3-2" className="sliderCards">
           <img src={slider2} className="defaultImg" alt="Slider 2"></img>
-          <img src={slider2hover} className="imgOnHover" alt="Slider 2 Hover"></img>
+          <img
+            src={slider2hover}
+            className="imgOnHover"
+            alt="Slider 2 Hover"
+          ></img>
         </div>
         <div id="bg-3-3" className="sliderCards">
           <img src={slider3} className="defaultImg" alt="Slider 3"></img>
-          <img src={slider3hover} className="imgOnHover" alt="Slider 3 Hover"></img>
+          <img
+            src={slider3hover}
+            className="imgOnHover"
+            alt="Slider 3 Hover"
+          ></img>
         </div>
         <div id="bg-3-4" className="sliderCards">
           <img src={slider4} className="defaultImg" alt="Slider 4"></img>
-          <img src={slider4hover} className="imgOnHover" alt="Slider 4 Hover"></img>
+          <img
+            src={slider4hover}
+            className="imgOnHover"
+            alt="Slider 4 Hover"
+          ></img>
         </div>
       </div>
       <div id="parallax-bg-2" className="bgText">
         <p id="small">Cushy Foamy Goodness</p>
-        <p id="big">SLIDE INTO SUMMER</p>
+          <p id="big">SLIDE INTO SUMMER</p>
       </div>
     </div>
   );

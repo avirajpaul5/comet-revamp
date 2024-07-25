@@ -21,7 +21,6 @@
   background-size: cover;
 }
 
-
 .heroText {
   grid-area: 1 / 3 / 2 / 3;
   font-size: 1em;
@@ -29,18 +28,21 @@
   color: #4a4a4a;
   font-family: "SpaceGrotesk-Regular";
   padding-left: 6.2em;
+  cursor: pointer;
 }
 
 .heroText span {
   color: #efefef;
+  cursor: pointer;
 }
 
 .heroLine {
   grid-area: 1 / 4 / 1 / 4;
   /* margin-top: 6.5em; */
-  color: #DCDCDC;
+  color: #dcdcdc;
   font-family: "SpaceGrotesk-Regular";
   margin-bottom: 0.8em;
+  cursor: pointer;
 }
 
 .heroLine span {
@@ -86,5 +88,4 @@
 .grid-item:hover {
   scale: 0.98;
   transition: 1s ease-in-out;
-
 }
