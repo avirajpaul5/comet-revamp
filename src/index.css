@@ -8,11 +8,11 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-img {
+.HeroContainer img {
   filter: grayscale(100%);
   transition: 0.7s;
 }
-img:hover {
+.HeroContainer img:hover {
   filter: grayscale(0);
 }
 

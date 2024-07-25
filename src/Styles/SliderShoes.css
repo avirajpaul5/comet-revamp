@@ -2,7 +2,6 @@
   width: 100%;
   height: auto;
   margin-bottom: 10em;
-  /* border: 2px solid red; */
 }
 
 .cardsContainer {
@@ -13,26 +12,47 @@
   gap: 2em;
   padding-top: 50em;
   z-index: 10000;
-  /* border: 2px solid blue; */
+  align-items: flex-start;
 }
 
-#bg-3-1 {
-  /* margin-left: 62em; */
-}
-#bg-3-2 {
-  /* margin-right: 80em; */
-  /* top: 20em; */
-}
-#bg-3-3 {
-  /* top: 50em; */
-  /* margin-left: 62em; */
+.sliderCards{
+  position: relative;
+  width: 30em;
 }
 
 .sliderCards img {
-  width: 30em;
-  /* height: 20em; */
-  /* object-fit: cover; */
+  width: 100%;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
 }
+
+.sliderCards .defaultImg {
+  z-index: 1; /* Ensure default image is below the hover image */
+}
+
+.sliderCards .imgOnHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; /* Ensure hover image is on top of the default image */
+  opacity: 0; /* Start with hover image hidden */
+}
+
+.sliderCards:hover .defaultImg {
+  opacity: 0; /* Hide default image on hover */
+}
+
+.sliderCards:hover .imgOnHover {
+  opacity: 1; /* Show hover image on hover */
+}
+
+#bg-3-1, #bg-3-3 {
+  align-self: flex-end;
+}
+
+#bg-3-2, #bg-3-4 {
+  align-self: flex-start;
+}
+
 .bgText {
   display: flex;
   flex-direction: column;
@@ -42,7 +62,6 @@
   color: #c6c6c6;
   font-family: "Gilroy-SemiBold";
   z-index: -1;
-  /* border: 2px solid yellow; */
 }
 
 .bgText p {
@@ -56,6 +75,7 @@
 
 #big {
   font-size: 5em;
+  font-family: "Gilroy-Semibold";
 }
 
 #small {
@@ -66,9 +86,13 @@
 @media (max-width: 1025px) {
   #bg-3-1,
   #bg-3-2,
-  #bg-3-3 {
+  #bg-3-3,
+  #bg-3-4 {
     margin: 1em;
     padding: 1em;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
   }
   .cardsContainer {
     display: flex;
@@ -80,22 +104,11 @@
     height: 100vh;
     padding-top: 50em;
   }
-}
-@media (max-width: 432px) {
-  #bg-3-1,
-  #bg-3-2,
-  #bg-3-3 {
-    margin: 1em;
-    padding: 1em;
-  }
-  .cardsContainer {
+  .bgText{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2em;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 50em;
   }
 }
+
