@@ -8,6 +8,13 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+img {
+  filter: grayscale(100%);
+  transition: 0.7s;
+}
+img:hover {
+  filter: grayscale(0);
+}
 
 .BestSellerContainer,
 .ReviewsContainer,

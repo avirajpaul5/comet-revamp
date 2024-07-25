@@ -36,8 +36,7 @@
 }
 
 .bestsellerWrapper {
-  height: 100vh;
-  background-color: #080808;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,10 +59,10 @@
   transform: translate(-50%, -6%);
   background: linear-gradient(
     to left,
-    rgb(0, 8, 0) 12%,
+    rgba(0, 8, 0, 0.08) 12%,
     rgba(0, 0, 0, 0) 40%,
     rgba(0, 0, 0, 0) 60%,
-    rgba(0, 0, 0, 1) 88%
+    rgba(0, 0, 0, 0.1) 88%
   );
 }
 
