@@ -30,7 +30,8 @@
 
 .sliderCards img {
   width: 30em;
-  height: 20em;
+  /* height: 20em; */
+  /* object-fit: cover; */
 }
 .bgText {
   display: flex;

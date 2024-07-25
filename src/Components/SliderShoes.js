@@ -3,10 +3,10 @@ import "../Styles/SliderShoes.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-import slider1 from "../Assets/sliderImages/slider 1.png";
-import slider2 from "../Assets/sliderImages/slider 2.png";
-import slider3 from "../Assets/sliderImages/slider 3.png";
-import slider4 from "../Assets/sliderImages/slider 4.png";
+import slider1 from "../Assets/sliderImages/slider1.png";
+import slider2 from "../Assets/sliderImages/slider2.png";
+import slider3 from "../Assets/sliderImages/slider3.png";
+import slider4 from "../Assets/sliderImages/slider4.png";
 
 const SliderShoesSection = () => {
   useGSAP(() => {
@@ -38,7 +38,7 @@ const SliderShoesSection = () => {
       },
     });
     gsap.to(".cardsContainer", {
-      transform: "translateY(-100%)",
+      transform: "translateY(-237%)",
       scrollTrigger: {
         trigger: ".mainSliderContainer",
         scroller: "body",

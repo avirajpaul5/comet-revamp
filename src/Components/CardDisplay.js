@@ -1,7 +1,6 @@
 import React from 'react';
 import "../Styles/cardDisplay.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTruck } from '@fortawesome/free-regular-svg-icons';
+
 
 const DOM = {
     class: {
