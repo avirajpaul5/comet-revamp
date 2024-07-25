@@ -91,7 +91,7 @@ const SliderShoesSection = () => {
       </div>
       <div id="parallax-bg-2" className="bgText">
         <p id="small">Cushy Foamy Goodness</p>
-          <p id="big">SLIDE INTO SUMMER</p>
+        <p id="big">SLIDE INTO SUMMER</p>
       </div>
     </div>
   );

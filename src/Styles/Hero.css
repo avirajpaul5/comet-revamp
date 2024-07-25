@@ -93,3 +93,22 @@
   scale: 0.98;
   transition: 1s ease-in-out;
 }
+
+@media(max-width:768px){
+  .heroTop, .grid-container{
+    display: none;
+  }
+  .HeroContainer{
+    background-image: url("../Assets/HeroImages/mobileHero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 700px;
+  }
+}
+
+@media(max-width:500px){
+  .HeroContainer{
+    height: 500px;
+  }
+}
