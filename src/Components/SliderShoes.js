@@ -44,7 +44,7 @@ const SliderShoesSection = () => {
         scroller: "body",
         start: "top top",
         end: "top -180%",
-        scrub: true,
+        scrub: 2,
         pin: true,
       },
     });
