@@ -14,11 +14,15 @@
   grid-area: 1 / 1 / 2 / 2;
   font-family: "Gilroy-SemiBold";
   font-size: 11.5em;
-  background-image: url("https://i.pinimg.com/564x/16/5b/19/165b19905378f449dd5e7f7d8acc5a17.jpg");
+  background-image: url("https://i.pinimg.com/564x/a9/58/18/a9581882c42716ea2af65f216e70c05c.jpg");
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: cover;
+  background-size: contain;
+}
+.heroHeading img {
+  width: 3em;
+
 }
 
 .heroText {

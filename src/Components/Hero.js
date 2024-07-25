@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { gsap } from "gsap";
 import "../Styles/Hero.css";
+import HeroImg from "../Assets/HeroImages/HeroImg.png";
 import shoe1 from "../Assets/HeroImages/starbound1.png";
 import shoe2 from "../Assets/HeroImages/Crater.png";
 import shoe3 from "../Assets/HeroImages/Jugnu.png";
@@ -86,7 +87,9 @@ const Hero = () => {
   return (
     <div className="HeroContainer">
       <div className="heroTop">
-        <div className="heroHeading">COMeT</div>
+        <div className="heroHeading">
+          <img src={HeroImg} />
+        </div>
 
         <p className="heroText">
           {" "}
