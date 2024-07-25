@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { gsap } from "gsap";
 import "../Styles/Hero.css";
 import HeroImg from "../Assets/HeroImages/HeroImg.png";
@@ -84,30 +84,41 @@ const Hero = () => {
       });
     }
   };
+
+  useEffect(() => {
+    gsap.from(".appear", {
+      opacity: 0,
+      duration: 1,
+      y: 30,
+      delay: 0.5,
+      stagger: 0.3
+    });
+  }, []);
+
   return (
     <div className="HeroContainer">
       <div className="heroTop">
-        <div className="heroHeading">
-          <img src={HeroImg} />
+        <div className="heroHeading appear">
+          <img src={HeroImg} alt="Hero" />
         </div>
 
-        <p className="heroText">
+        <p className="heroText appear">
           {" "}
           Shop for{" "}
           <span>
             {" "}
-            Men <p className="womenShop">Women</p>{" "}
+            Men <p className="womenShop appear">Women</p>{" "}
           </span>
         </p>
 
-        <div className="heroLine">
+        <div className="heroLine appear">
           <p>
             “Sneakers <span> on a mission” </span>
           </p>
         </div>
       </div>
 
-      <div className="grid-container">
+      <div className="grid-container appear">
         {images.map((image) => (
           <div
             key={image.id}

@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/Navbar.css";
+import { gsap } from "gsap";
 import logo from "../Assets/navbarImages/logo.png";
 import cartIcon from "../Assets/navbarImages/cart.png";
 import Scramble from "../Components/Scramble";
 const Navbar = () => {
+  useEffect(() => {
+    gsap.from(".NavbarContainer", {
+      opacity: 0,
+      duration: 0.5,
+      y: 30,
+    });
+  }, []);
   return (
     <div className="NavbarContainer">
       <div className="logo">
