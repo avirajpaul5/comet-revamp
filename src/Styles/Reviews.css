@@ -439,28 +439,44 @@ li {
   transform: translate(0) scale(1);
 }
 
+.bullets {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
 .bullets__item {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 
+.bullets__item:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 #slide-1:checked ~ .bullets .bullets__item--1 {
-  background: #fff;
+  background: black;
 }
 
 #slide-2:checked ~ .bullets .bullets__item--2 {
-  background: #fff;
+  background: black;
 }
 
 #slide-3:checked ~ .bullets .bullets__item--3 {
-  background: #fff;
+  background: black;
 }
 
 #slide-4:checked ~ .bullets .bullets__item--4 {
-  background: #fff;
+  background: black;
 }
 
 #slide-5:checked ~ .bullets .bullets__item--5 {
-  background: #fff;
+  background: black;
 }
 
 .card {
@@ -475,6 +491,7 @@ li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  position: relative;
   /* height: 20em; */
 }
 
@@ -482,8 +499,22 @@ li {
   font-size: 2.5em;
 }
 
+/* Custom radio button styling */
 .slider__radio {
   display: none;
+}
+
+/* Add styles for the bullets that represent the radio buttons */
+.bullets__item {
+  background-color: rgba(0, 0, 0, 0.3) !important; /* Default state */
+}
+
+#slide-1:checked ~ .bullets .bullets__item--1,
+#slide-2:checked ~ .bullets .bullets__item--2,
+#slide-3:checked ~ .bullets .bullets__item--3,
+#slide-4:checked ~ .bullets .bullets__item--4,
+#slide-5:checked ~ .bullets .bullets__item--5 {
+  background-color: black !important; /* Active state */
 }
 
 .slider__holder {
@@ -690,5 +721,65 @@ li {
 @media (max-width: 321px) {
   .slider__item-content {
     height: 35em;
+  }
+}
+
+/* Carousel Navigation Buttons */
+.carousel-buttons {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  pointer-events: none; /* This ensures clicks pass through to elements below */
+  z-index: 10;
+}
+
+.carousel-button {
+  padding: 10px 15px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto; /* Re-enable pointer events for buttons */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .carousel-buttons {
+    padding: 0 10px;
+  }
+
+  .carousel-button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-button {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    border-width: 1px;
   }
 }
