@@ -156,8 +156,6 @@ Contributions to improve COMET are welcome. Please follow these steps:
 
 ## License
 
-© 2024, Grails Marketing Private Limited. All Rights Reserved.
+This project is licensed under the MIT License.
 
 ---
-
-Developed by Team White Space
