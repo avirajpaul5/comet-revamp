@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { gsap } from "gsap";
 import "../Styles/Hero.css";
-import HeroImg from "../Assets/HeroImages/HeroImg.png";
-import shoe1 from "../Assets/HeroImages/starbound1.png";
-import shoe2 from "../Assets/HeroImages/Crater.png";
-import shoe3 from "../Assets/HeroImages/Jugnu.png";
-import shoe4 from "../Assets/HeroImages/Ludo.png";
-import shoe5 from "../Assets/HeroImages/Mango.png";
-import shoe6 from "../Assets/HeroImages/Skribble.png";
-import shoe7 from "../Assets/HeroImages/Spacebound.png";
-import shoe8 from "../Assets/HeroImages/Tuxedo.png";
-import shoe9 from "../Assets/HeroImages/dusk.png";
-import shoe10 from "../Assets/HeroImages/luna.png";
-import shoe11 from "../Assets/HeroImages/santanu.png";
+import HeroImg from "../Assets/HeroImages/HeroImg.webp";
+import shoe1 from "../Assets/HeroImages/starbound1.webp";
+import shoe2 from "../Assets/HeroImages/Crater.webp";
+import shoe3 from "../Assets/HeroImages/Jugnu.webp";
+import shoe4 from "../Assets/HeroImages/Ludo.webp";
+import shoe5 from "../Assets/HeroImages/Mango.webp";
+import shoe6 from "../Assets/HeroImages/Skribble.webp";
+import shoe7 from "../Assets/HeroImages/Spacebound.webp";
+import shoe8 from "../Assets/HeroImages/Tuxedo.webp";
+import shoe9 from "../Assets/HeroImages/dusk.webp";
+import shoe10 from "../Assets/HeroImages/luna.webp";
+import shoe11 from "../Assets/HeroImages/santanu.webp";
 import Scramble from "./Scramble";
 
 const images = [
@@ -91,7 +91,7 @@ const Hero = () => {
       duration: 1,
       y: 30,
       delay: 0.5,
-      stagger: 0.3
+      stagger: 0.3,
     });
   }, []);
 
